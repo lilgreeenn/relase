@@ -87,7 +87,9 @@
   .slide-bg {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    background: var(--bg);
     display: block;
   }
 
@@ -358,54 +360,30 @@
 
   <div id="slides-strip">
 
-    <!-- slides 1–8 (zine pages) -->
-    <div class="slide" data-i="0">
-      <div class="slide-placeholder">
-        <div class="ph-num">01</div>
-        <div class="ph-label">your image here</div>
-      </div>
+    <!-- slides 1–8：本地漫画页（与 relase 目录下 JPEG 同序） -->
+    <div class="slide" data-i="0" data-asset="1.JPEG">
+      <img class="slide-bg" src="1.JPEG" alt="漫画第 1 页" decoding="async" fetchpriority="high">
     </div>
-    <div class="slide" data-i="1">
-      <div class="slide-placeholder">
-        <div class="ph-num">02</div>
-        <div class="ph-label">your image here</div>
-      </div>
+    <div class="slide" data-i="1" data-asset="1封面.JPEG">
+      <img class="slide-bg" src="1封面.JPEG" alt="封面" decoding="async">
     </div>
-    <div class="slide" data-i="2">
-      <div class="slide-placeholder">
-        <div class="ph-num">03</div>
-        <div class="ph-label">your image here</div>
-      </div>
+    <div class="slide" data-i="2" data-asset="2 4.JPEG">
+      <img class="slide-bg" src="2%204.JPEG" alt="漫画第 3 页" decoding="async">
     </div>
-    <div class="slide" data-i="3">
-      <div class="slide-placeholder">
-        <div class="ph-num">04</div>
-        <div class="ph-label">your image here</div>
-      </div>
+    <div class="slide" data-i="3" data-asset="3.JPEG">
+      <img class="slide-bg" src="3.JPEG" alt="漫画第 4 页" decoding="async">
     </div>
-    <div class="slide" data-i="4">
-      <div class="slide-placeholder">
-        <div class="ph-num">05</div>
-        <div class="ph-label">your image here</div>
-      </div>
+    <div class="slide" data-i="4" data-asset="4.JPEG">
+      <img class="slide-bg" src="4.JPEG" alt="漫画第 5 页" decoding="async">
     </div>
-    <div class="slide" data-i="5">
-      <div class="slide-placeholder">
-        <div class="ph-num">06</div>
-        <div class="ph-label">your image here</div>
-      </div>
+    <div class="slide" data-i="5" data-asset="5.JPEG">
+      <img class="slide-bg" src="5.JPEG" alt="漫画第 6 页" decoding="async">
     </div>
-    <div class="slide" data-i="6">
-      <div class="slide-placeholder">
-        <div class="ph-num">07</div>
-        <div class="ph-label">your image here</div>
-      </div>
+    <div class="slide" data-i="6" data-asset="6.JPEG">
+      <img class="slide-bg" src="6.JPEG" alt="漫画第 7 页" decoding="async">
     </div>
-    <div class="slide" data-i="7">
-      <div class="slide-placeholder">
-        <div class="ph-num">08</div>
-        <div class="ph-label">your image here</div>
-      </div>
+    <div class="slide" data-i="7" data-asset="in.JPEG">
+      <img class="slide-bg" src="in.JPEG" alt="漫画第 8 页" decoding="async">
     </div>
 
     <!-- slide 9: dream wall -->
